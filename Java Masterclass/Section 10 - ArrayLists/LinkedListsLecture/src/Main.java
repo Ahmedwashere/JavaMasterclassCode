@@ -143,5 +143,7 @@ public class Main {
 
         //list.listIterator would allow add, set, and remove
         // (GIVE ME GOOD NOTES FOR THIS PLEASE)
+
+        //There is also -previous in java
     }
 }
