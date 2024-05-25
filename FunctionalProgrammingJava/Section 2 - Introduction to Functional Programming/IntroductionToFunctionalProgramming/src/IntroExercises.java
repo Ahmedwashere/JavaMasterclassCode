@@ -16,7 +16,16 @@ public class IntroExercises {
         printSpringCoursesFunctional(courses);
         System.out.println();
         printLengthTwentyCoursesFunctional(courses);
+        System.out.println();
+        printLengthOfAllCourses(courses);
     }
+
+    private static void printLengthOfAllCourses(List<String> courses) {
+        courses.stream()
+                .map(x -> x + ": " + x.length())
+                .forEach(System.out::println);
+    }
+
 
     public static void printSpringCoursesFunctional(List<? extends String> courses){
         courses.stream()

@@ -3,6 +3,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        List<Integer> numbers = List.of(3, 8, 15, 22, 9, 4, 17, 6, 11, 2);
+
         // Method to print a list traditionally v.s. functionally
         printAllNumberInListStructured(List.of(4,3,2,1,11,32));
         System.out.println();
@@ -11,10 +13,20 @@ public class Main {
         printAllNumberInListFunctional(List.of(4,3,2,1,11,32));
         System.out.println();
         printEvenNumberInListFunctional(List.of(4,3,2,1,11,32));
+        System.out.println();
+        printSquareOfNumbers(numbers);
     }
 
     private static boolean isEven(int i){
         return i % 2 == 0;
+    }
+
+    private static void printSquareOfNumbers(List<Integer> integers){
+        integers.stream()
+                .filter(x -> x%2 == 0)
+                .mapToLong(x -> x * x)
+                .forEach(System.out::println);
+
     }
 
     private static void printEvenNumberInListFunctional(List<Integer> integers) {
