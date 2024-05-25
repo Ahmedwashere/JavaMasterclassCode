@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GenericsChallenge.iml" filepath="$PROJECT_DIR$/GenericsChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericsMultipleBoundsStaticMethodsChallenge.iml" filepath="$PROJECT_DIR$/GenericsMultipleBoundsStaticMethodsChallenge.iml" />
     </modules>
   </component>
 </project>
